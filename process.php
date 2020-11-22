@@ -21,6 +21,8 @@ if($prev_oprt=="+"){
 	$sum/=number_format($data);
 	//array_splice($oprt, $i, 1);
 	//array_splice($data, 0, 2);
+}else if($prev_oprt=="="){
+	echo(json_encode($sum));
 }
 echo(json_encode($sum));
 ?>
